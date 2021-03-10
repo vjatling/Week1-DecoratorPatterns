@@ -1,5 +1,18 @@
 package lewisu.ood.week1;
 
 public class CheeseTopping {
+	public CheeseTopping(Pizza decoratedPizza) {
+	      super(decoratedPizza);		
+	   }
+
+	   @Override
+	   public void getDescription() {
+	      decoratedPizza.getDescription();	       
+	      setCheeseTopping(decoratedPizza);
+	   }
+
+	   private void setCheeseTopping(Pizza decoratedPizza){
+	      System.out.println("CheeseTopping");
+	   }
 
 }
