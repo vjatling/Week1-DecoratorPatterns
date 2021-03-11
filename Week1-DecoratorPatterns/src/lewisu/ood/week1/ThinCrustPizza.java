@@ -1,6 +1,6 @@
 package lewisu.ood.week1;
 
-public class ThinCrustPizza {
+public class ThinCrustPizza implements Pizza {
 	
 	@Override
 	   public void getDescription() {

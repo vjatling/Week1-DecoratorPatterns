@@ -1,10 +1,9 @@
 package lewisu.ood.week1;
 
 public class DecoratorPattern {
+	   public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Pizza TCP = new ThinCrustPizza();
+	      Pizza TCP = new ThinCrustPizza();
 
 	      Pizza cheeseTop = new CheeseTopping(new ThinCrustPizza());
 
@@ -17,6 +16,5 @@ public class DecoratorPattern {
 
 	      System.out.println("\n Thick Crust Cheese Topping");
 	      ThCP.getDescription();
-	}
-
+	   }
 }

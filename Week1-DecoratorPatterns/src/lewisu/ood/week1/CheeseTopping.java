@@ -1,7 +1,8 @@
 package lewisu.ood.week1;
 
-public class CheeseTopping {
-	public CheeseTopping(Pizza decoratedPizza) {
+public class CheeseTopping extends ToppingPizzaDecorator {
+
+	   public CheeseTopping(Pizza decoratedPizza) {
 	      super(decoratedPizza);		
 	   }
 
@@ -14,5 +15,4 @@ public class CheeseTopping {
 	   private void setCheeseTopping(Pizza decoratedPizza){
 	      System.out.println("CheeseTopping");
 	   }
-
 }
